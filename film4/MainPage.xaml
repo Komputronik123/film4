@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="film4.MainPage"
+             xmlns:local="clr-namespace:YourNamespace">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            BackgroundColor="#000000"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Recenzje filmów (prototyp)"
+                TextColor="#FFFFFF"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Frame BorderColor="#FFFFFF" HasShadow="False" Padding="9" Margin="0">
+                <Image
+                    Source="indi.png"
+                    SemanticProperties.Description="Cmovie"
+                    HeightRequest="400"
+                    HorizontalOptions="Start">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            <Label
+                TextColor="#FFFFFF"
+                Text="Recenzja dla filmu 1"
+                FontSize="18"
+                HorizontalOptions="Start" />
+
+            <Frame BorderColor="#FFFFFF" HasShadow="False" Padding="9" Margin="0">
+                <Image
+                    Source="stary.png"
+                    SemanticProperties.Description="Cmovie"
+                    HeightRequest="400"
+                    HorizontalOptions="Start">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            <Label
+                TextColor="#FFFFFF"
+                Text="Recenzja dla filmu 2"
+                FontSize="18"
+                HorizontalOptions="Start" />
+
+            <Frame BorderColor="#FFFFFF" HasShadow="False" Padding="9" Margin="0">
+                <Image
+                    Source="lista.jpg" 
+                    SemanticProperties.Description="Cmovie"
+                    HeightRequest="400"
+                    HorizontalOptions="Start">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped3"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            <Label
+                TextColor="#FFFFFF"
+                Text="Recenzja dla filmu 3"
+                FontSize="18"
+                HorizontalOptions="Start" />
+
+            <Frame BorderColor="#FFFFFF" HasShadow="False" Padding="9" Margin="0">
+                <Image
+                    Source="godzina.png"
+                    SemanticProperties.Description="Cmovie"
+                    HeightRequest="400"
+                    HorizontalOptions="Start">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped4"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            <Label
+                TextColor="#FFFFFF"
+                Text="Recenzja dla filmu 4"
+                FontSize="18"
+                HorizontalOptions="Start" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
